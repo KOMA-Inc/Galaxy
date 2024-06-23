@@ -70,6 +70,12 @@ struct ContentView: View {
                             ]
                         )
                         .frame(height: 250)
+                        .overlay {
+                            Image(systemName: "face.smiling")
+                                .resizable()
+                                .frame(width: 70, height: 70)
+                                .foregroundStyle(.yellow)
+                        }
                     }
 
                 }
